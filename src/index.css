@@ -1,1 +1,27 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+.header-bar {
+  background: #10dd21;
+  width: 100%;
+  height: 20vh;
+  max-height: 100px; }
+
+.footer-bar {
+  margin-top: auto;
+  background: orange;
+  width: 100%;
+  height: 10vh;
+  max-height: 100px; }
+
+.logo {
+  max-width: 125px;
+  max-height: 90px;
+  display: block;
+  margin: auto; }
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    width: 35vw;
+    height: 20vh; } }

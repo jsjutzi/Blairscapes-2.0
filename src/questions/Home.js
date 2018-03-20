@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {getGrass} from '../ducks/reducer.js';
 import {Link, withRouter} from 'react-router-dom';
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
+
 
 
 
