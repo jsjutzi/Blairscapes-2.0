@@ -2,7 +2,7 @@ import {createStore, applyMiddleware} from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
 
 import {devToolsEnhancer} from 'redux-devtools-extension';
-import reducer from './Ducks/reducer.js';
+import reducer from './ducks/reducer.js';
 
 export default createStore(
     reducer,

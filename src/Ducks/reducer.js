@@ -31,7 +31,8 @@ const initialState = {
     mulch: false,
     airation: false,
     dethatching: false,
-    selectedCustomer: {}
+    selectedCustomer: {},
+    adminUser: false
 
 
 
