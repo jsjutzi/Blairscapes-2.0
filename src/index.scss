@@ -1,4 +1,4 @@
-$blue: rgb(8, 114, 214);
+$blue: rgb(4, 159, 206);
 $darkGreen: rgb(16, 221, 33);
 $monty: 'Montserrat', sans-serif;
 
@@ -7,18 +7,48 @@ $monty: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
   }
-
+body{
+    background: $darkGreen;
+}
+/////////////////////STICKY FOOTER/////////////////////////////
+.Site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.Site-content {
+    flex: 1 0 auto;
+    padding: var( — space) var( — space) 0;
+    width: 100%;
+}
+.Site-content:after {
+    display: block;
+    margin-top: var( — space);
+    height: 0;
+    visibility: hidden;
+}
+/////////////////////STICKY FOOTER/////////////////////////////
+.content-text{
+    padding: 8vw;
+    color: darkblue;
+}
 .header-bar{
-  background: $darkGreen;
+  background: $blue;
   width: 100%;
   height: 20vh;
   max-height: 100px;
 }
+.copyright{
+    color: white;
+}
 .footer-bar{
   background: orange;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   max-height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo{

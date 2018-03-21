@@ -19,11 +19,9 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <div className='question'>
+                <div className='content-text'>
                     <p>Welcome to Blairscapes!  To get a free estimate for lawncare, please click below and answer 10 simple questions about your needs to help us determine your quote.</p>
                 </div>
-                <Link to='/question1'><button className='get-quote'>Get Quote</button></Link>
-               
             </div>
         )
     }

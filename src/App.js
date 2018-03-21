@@ -8,9 +8,11 @@ import Footer from './banners/Footer';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App Site">
         <Header/>
-        {router}
+          <div className="Site-content">
+             {router}
+          </div>
         <Footer/>
       </div>
     );

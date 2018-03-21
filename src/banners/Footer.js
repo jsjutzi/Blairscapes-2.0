@@ -6,7 +6,7 @@ export default class Footer extends Component{
     render(){
         return(
             <div className='footer-bar'>
-               <p>&copy; Blairscapes 2018 </p>
+               <p className='copyright'>&copy; Blairscapes 2018 </p>
             </div>
         )
     }
