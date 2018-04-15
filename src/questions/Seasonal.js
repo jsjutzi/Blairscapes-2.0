@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 
 import {Link} from 'react-router-dom'
 import {withRouter} from 'react-router'
-import {getMulch} from '../ducks/reducer'
+import {getSeasonal} from '../ducks/reducer'
 
 import Checkbox from '../components/Checkbox'
 import Button from '../components/Button'
@@ -12,34 +12,35 @@ import Button from '../components/Button'
 
 
 
-class Mulch extends Component{
+class Seasonal extends Component{
     constructor(props){
         super(props)
         this.state= {
-            mulch: false,
+            seasonal: false,
             yesChecked: false,
             noChecked: false
         }
     }
 
     onNext = () => {
-        this.props.getMulch(this.state.mulch)
-        this.props.history.push('/irrigation')
+        this.props.getSeasonal(this.state.seasonal)
+        this.props.history.push('/year-round')
+       
     }
 
     onClick = (val) => {
         if (val === 'yesChecked'){
-            this.setState({yesChecked: true, noChecked: false, mulch: true})
+            this.setState({yesChecked: true, noChecked: false, seasonal: true})
         }
         if (val === 'noChecked') {
-            this.setState({yesChecked: false, noChecked: true, mulch: false})
+            this.setState({yesChecked: false, noChecked: true, seasonal: false})
         }
     }
 
 render(){
     return(
         <div>
-            <p className='content-text' >Would you prefer mulch?</p>
+            <p className='content-text' >Would you prefer seasonal color?</p>
             <div className='content-container'>
                 <p className='content-text'>Yes</p>
                         <Checkbox
@@ -60,4 +61,4 @@ render(){
     )
 }
 }
-export default withRouter(connect(null, {getMulch})(Mulch))
+export default withRouter(connect(null, {getSeasonal})(Seasonal))
