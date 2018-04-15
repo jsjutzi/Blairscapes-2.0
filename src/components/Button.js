@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
+import {Button} from 'react-bootstrap'
 
 
-export default class Button extends Component{
+export default class ButtonComponent extends Component{
     render(){
         const {title, color, linkTo, onClick} = this.props
         return(
             <div className="centered">
-                <button onClick={onClick}>{title}</button>
+                <button className='button' onClick={onClick}>{title}</button>
             </div>
         )
     }
